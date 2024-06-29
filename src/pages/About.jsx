@@ -134,13 +134,18 @@ const About = () => {
         <ContactFormSection />
       </section>
 
-      <div className="relative mx-auto my-20 flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-richblack-900 text-white">
+      {/* <div className="relative mx-auto my-20 flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-richblack-900 text-white"> */}
         {/* Reviews from Other Learners */}
-        <h1 className="text-center text-4xl font-semibold mt-8">
+        {/* <h1 className="text-center text-4xl font-semibold mt-8">
           Reviews from other learners
-        </h1>
-        <ReviewSlider />
-      </div>
+        </h1> */}
+        {/* <ReviewSlider /> */}
+      {/* </div> */}
+
+
+  <br />
+  <br />
+
       <Footer />
     </div>
   );
