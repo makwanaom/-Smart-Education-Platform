@@ -9,10 +9,8 @@ const mailSender = async (email, title, body) => {
                     pass: process.env.MAIL_PASS,
                 }
             })
-
-
             let info = await transporter.sendMail({
-                from: 'Smart Education || CodeHelp - by Babbar',
+                from: 'Smart Education || mainavinhoon ',
                 to:`${email}`,
                 subject: `${title}`,
                 html: `${body}`,
