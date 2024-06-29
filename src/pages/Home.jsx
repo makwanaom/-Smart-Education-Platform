@@ -89,7 +89,7 @@ function Home() {
               </div>
             }
             subheading={
-              "Go ahead, give it a try. Our hands-on learning environment means you'll be writing real code from your very first lesson."
+              "Feel free to give it a shot. In our interactive learning environment, you'll start coding real projects right from your first lesson"
             }
             ctabtn1={{
               btnText: "Continue Lesson",
@@ -140,9 +140,7 @@ function Home() {
             </div>
             <div className="flex flex-col items-start gap-10 lg:w-[40%]">
               <div className="text-[16px]">
-                The modern Smart Education is the dictates its own terms. Today, to
-                be a competitive specialist requires more than professional
-                skills.
+              Modern Smart Education sets its own standards. Today, being a competitive specialist demands more than just professional skills.
               </div>
               <CTAButton active={true} linkto={"/signup"}>
                 <div className="">Learn More</div>
