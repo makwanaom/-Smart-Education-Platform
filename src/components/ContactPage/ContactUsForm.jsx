@@ -53,6 +53,7 @@ const ContactUsForm = () => {
           <label htmlFor="firstname" className="lable-style">
             First Name
           </label>
+         
           <input
             
             type="text"
@@ -62,6 +63,7 @@ const ContactUsForm = () => {
             className="form-style"
             {...register("firstname", { required: true })}
           />
+           
           {errors.firstname && (
             <span className="-mt-1 text-[12px] text-blue-100">
               Please enter your name.
