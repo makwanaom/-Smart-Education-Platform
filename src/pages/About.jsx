@@ -95,9 +95,9 @@ const About = () => {
 
             <div>
               <img
-                src={FoundingStory}
+                src={BannerImage5}
                 alt=""
-                className="shadow-[0_0_20px_0] shadow-[#FC6767]"
+                className="shadow-[0_0_20px_0] w-96 h-80 shadow-[#FC6767]"
               />
               
             </div>
