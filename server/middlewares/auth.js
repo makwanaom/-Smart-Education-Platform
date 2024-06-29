@@ -1,3 +1,11 @@
+//////
+///
+
+
+
+
+
+
 // Importing required modules
 const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv");
@@ -53,10 +61,11 @@ exports.isStudent = async (req, res, next) => {
 			});
 		}
 		next();
+
 	} catch (error) {
 		return res
 			.status(500)
-			.json({ success: false, message: `User Role Can't be Verified` });
+			.json({ success: false, message: `User  Role Can't be Verified` });
 	}
 };
 exports.isAdmin = async (req, res, next) => {
@@ -76,6 +85,16 @@ exports.isAdmin = async (req, res, next) => {
 			.json({ success: false, message: `User Role Can't be Verified` });
 	}
 };
+
+
+
+
+
+
+
+
+
+
 exports.isInstructor = async (req, res, next) => {
 	try {
 		const userDetails = await User.findOne({ email: req.user.email });
@@ -95,4 +114,4 @@ exports.isInstructor = async (req, res, next) => {
 			.status(500)
 			.json({ success: false, message: `User Role Can't be Verified` });
 	}
-};
+}
