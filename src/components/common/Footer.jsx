@@ -172,7 +172,7 @@ const Footer = () => {
             })}
           </div>
 
-          <div className="text-center">Made with ❤️ Coding Avengers © 2023 Smart Education</div>
+          <div className="text-center">Made with ❤️ Coding Avengers © 2024 Smart Education</div>
         </div>
       </div>
     </div>

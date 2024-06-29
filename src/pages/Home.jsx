@@ -19,29 +19,17 @@ function Home() {
   return (
     <div>
       {/* Section 1 */}
-      <div className="relative mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 text-white">
-        {/* Become a Instructor Button */}
-        <Link to={"/signup"}>
-          <div className="group mx-auto mt-16 w-fit rounded-full bg-richblack-800 p-1 font-bold text-richblack-200 drop-shadow-[0_1.5px_rgba(255,255,255,0.25)] transition-all duration-200 hover:scale-95 hover:drop-shadow-none">
-            <div className="flex flex-row items-center gap-2 rounded-full px-10 py-[5px] transition-all duration-200 group-hover:bg-richblack-900">
-              <p>Become an Instructor</p>
-              <FaArrowRight />
-            </div>
-          </div>
-        </Link>
-
+      <div className="relative mx-auto flex w-11/12 max-w-maxContent mt-9 flex-col items-center justify-between gap-8 text-white">
+    
         {/* Heading */}
         <div className="text-center text-4xl font-semibold">
-          Empower Your Future with
+        Transform Your Future with 
           <HighlightText text={"Coding Skills"} />
         </div>
 
         {/* Sub Heading */}
         <div className="-mt-3 w-[90%] text-center text-lg font-bold text-richblack-300">
-          With our online coding courses, you can learn at your own pace, from
-          anywhere in the world, and get access to a wealth of resources,
-          including hands-on projects, quizzes, and personalized feedback from
-          instructors.
+        With our online coding courses, you can study at your convenience, no matter where you are, and gain access to numerous resources, including practical projects, quizzes, and tailored feedback from instructors
         </div>
 
         {/* CTA Buttons */}
@@ -50,21 +38,15 @@ function Home() {
             Learn More
           </CTAButton>
           <CTAButton active={false} linkto={"/login"}>
-            Book a Demo
+            Sign UP 
           </CTAButton>
         </div>
 
-        {/* Video */}
-        <div className="mx-3 my-7 shadow-[10px_-5px_50px_-5px] shadow-blue-200">
-          <video
-            className="shadow-[20px_20px_rgba(255,255,255)]"
-            muted
-            loop
-            autoPlay
-          >
-            <source src={Banner} type="video/mp4" />
-          </video>
-        </div>
+      
+        <div className="relative mx-auto my-20 flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-richblack-900 text-white">
+        {/* Become a instructor section */}
+        <InstructorSection />
+      </div>
 
         {/* Code Section 1  */}
         <div>
@@ -78,7 +60,7 @@ function Home() {
               </div>
             }
             subheading={
-              "Our courses are designed and taught by industry experts who have years of experience in coding and are passionate about sharing their knowledge with you."
+              "Designed and taught by seasoned industry professionals, our courses bring years of coding expertise and a deep passion for teaching to your learning experience"
             }
             ctabtn1={{
               btnText: "Try it Yourself",
@@ -177,16 +159,7 @@ function Home() {
       </div>
 
       {/* Section 3 */}
-      <div className="relative mx-auto my-20 flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-richblack-900 text-white">
-        {/* Become a instructor section */}
-        <InstructorSection />
-
-        {/* Reviws from Other Learner */}
-        <h1 className="text-center text-4xl font-semibold mt-8">
-          Reviews from other learners
-        </h1>
-        <ReviewSlider />
-      </div>
+     
 
       {/* Footer */}
       <Footer />

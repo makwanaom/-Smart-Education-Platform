@@ -38,7 +38,7 @@ function App() {
 
 
   return (
-   <div className="w-screen min-h-screen bg- flex flex-col font-inter">
+   <div className="w-screen bg-blue-900 min-h-screen flex flex-col font-inter">
     <Navbar/>
     <Routes>
       <Route path="/" element={<Home/>} />
